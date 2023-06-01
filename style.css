@@ -447,10 +447,6 @@ ul li a:active {
     width: max-content;
   }
 
-  .company-list.active {
-    /* gap: 1rem; */
-  }
-
   .company-list-el {
     display: flex;
   }
