@@ -249,11 +249,6 @@ ul li a:active {
   order: -1;
 }
 
-.hero-image img {
-  object-fit: contain;
-  height: 100%;
-}
-
 .hero-content {
   text-align: center;
   padding-inline: 1rem;
@@ -390,6 +385,11 @@ ul li a:active {
 
   .hero-image {
     order: 1;
+  }
+
+  .hero-image img {
+    object-fit: cover;
+    height: 100%;
   }
 
   .mobile-nav {
