@@ -1,39 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-el">
+              <a href="#" class="features">
+                Features<img
+                  class="arrow-d active"
+                  src="./images/icon-arrow-down.svg"
+                  alt="arrow down"
+                />
+                <img
+                  class="arrow-u"
+                  src="./images/icon-arrow-up.svg"
+                  alt="arrow up"
+                />
+              </a>
 
-  Features
-  Company
-  Careers
-  About
+              <ul class="features-list">
+                <li class="features-list-el">
+                  <a
+                    ><div><img src="./images/icon-todo.svg" alt="Todo" /></div>
+                    <span>Todo List</span>
+                  </a>
+                </li>
+                <li class="features-list-el">
+                  <a
+                    ><div>
+                      <img src="./images/icon-calendar.svg" alt="Calendar" />
+                    </div>
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li class="features-list-el">
+                  <a
+                    ><div>
+                      <img src="./images/icon-reminders.svg" alt="Reminders" />
+                    </div>
+                    <span>Reminders</span>
+                  </a>
+                </li>
+                <li class="features-list-el">
+                  <a
+                    ><div>
+                      <img src="./images/icon-planning.svg" alt="Planning" />
+                    </div>
+                    <span>Planning</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-  Login
-  Register
+            <li class="menu-el">
+              <a href="#" class="company">
+                Company<img
+                  class="arrow-d active"
+                  src="./images/icon-arrow-down.svg"
+                  alt="arrow down"
+                />
+                <img
+                  class="arrow-u"
+                  src="./images/icon-arrow-up.svg"
+                  alt="arrow up"
+                />
+              </a>
+              <ul class="company-list">
+                <li class="company-list-el"><a href="#">History</a></li>
+                <li class="company-list-el"><a href="#">Our Team</a></li>
+                <li class="company-list-el"><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="menu-el"><a href="#">Careers</a></li>
+            <li class="menu-el"><a href="#">About</a></li>
+          </ul>
+          <button class="btn btn-login">Login</button>
+          <button class="btn btn-register">Register</button>
+        </div>
+        <div class="overlay"></div>
+        <button class="mobile-nav">
+          <img
+            src="./images/icon-menu.svg"
+            class="menu-closed active"
+            alt="menu"
+          />
+          <img
+            src="./images/icon-close-menu.svg"
+            class="menu-opened"
+            alt="menu"
+          />
+        </button>
+      </header>
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Make remote work</h1>
+          <p class="hero-description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn hero-btn">Learn more</button>
+          <div class="partners">
+            <div class="partner">
+              <img src="./images/client-databiz.svg" alt="databiz" />
+            </div>
+            <div class="partner">
+              <img src="./images/client-audiophile.svg" alt="audiophile" />
+            </div>
+            <div class="partner">
+              <img src="./images/client-meet.svg" alt="meet" />
+            </div>
+            <div class="partner">
+              <img src="./images/client-maker.svg" alt="maker" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="images/image-hero-desktop.png"
+            />
+            <img src="./images/image-hero-mobile.png" alt="" />
+          </picture>
+        </div>
+      </div>
+    </div>
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
